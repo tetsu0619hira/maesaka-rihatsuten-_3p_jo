@@ -18,14 +18,3 @@ document.addEventListener('keydown', event => {
   }
 });
 window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
-const form = document.querySelector('#contact-form');
-const status = document.querySelector('#form-status');
-function previewForm(event) {
-  event.preventDefault();
-  if (!form.reportValidity()) return;
-  status.textContent = '入力を確認しました。これはデモのため、内容は送信されていません。実際のお問い合わせは 026-245-0146 へお電話ください。';
-  status.focus();
-}
-form.addEventListener('submit', previewForm);
-document.querySelector('#demo-submit').addEventListener('click', previewForm);
-form.addEventListener('input', () => { status.textContent = ''; });
