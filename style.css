@@ -6,3 +6,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
 .menu-photos>figure:first-child figcaption{top:0;bottom:auto}
+
+.contact-layout{grid-template-columns:1fr;max-width:760px;margin-inline:auto;text-align:center}
